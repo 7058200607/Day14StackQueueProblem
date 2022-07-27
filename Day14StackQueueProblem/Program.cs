@@ -18,10 +18,17 @@ namespace Day14StackQueueProblem
             stacksProblem.display();
             stacksProblem.peek();
             stacksProblem.display();
-            stacksProblem.pop();
-            stacksProblem.display();
-            stacksProblem.IsEmpty();
-            stacksProblem.display();
+            //stacksProblem.pop();
+            //stacksProblem.display();
+            //stacksProblem.IsEmpty();
+            //stacksProblem.display();
+
+            Console.WriteLine("Do Queue Operation");
+            LinkList linklist = new LinkList();
+            linklist.EnQueue(56);
+            linklist.EnQueue(30);
+            linklist.EnQueue(70);
+            linklist.display();
 
         }
     }
