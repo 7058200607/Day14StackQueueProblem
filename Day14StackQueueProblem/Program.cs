@@ -29,6 +29,12 @@ namespace Day14StackQueueProblem
             linklist.EnQueue(30);
             linklist.EnQueue(70);
             linklist.display();
+            linklist.DeQueue(56);
+            linklist.display();
+            linklist.DeQueue(30);
+            linklist.display();
+            linklist.DeQueue(70);
+            linklist.display();
 
         }
     }

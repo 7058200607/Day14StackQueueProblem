@@ -43,6 +43,25 @@ namespace Day14StackQueueProblem
                 temp = temp.next;
             }
         }
-    }
+        internal void DeQueue(int data)
+        {
+            Node node = new Node(data);
+            if (head == null)
+            {
+                Console.WriteLine("Queue is Empty ,Deletion is not Possible");
+                return;
 
+            }
+            Console.WriteLine("value Dequeue is {0}", this.head.data);
+            this.head = this.head.next;
+
+            if (this.head == null)
+            {
+                this.head = node;
+                Console.WriteLine("item Deleted {0}", head.data);
+            }
+        }
+    }
 }
+
+
