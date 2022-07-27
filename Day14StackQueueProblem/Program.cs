@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Day14StackQueueProblem 
+namespace Day14StackQueueProblem
 {
     public class program
     {
@@ -15,6 +15,12 @@ namespace Day14StackQueueProblem
             stacksProblem.push(70);
             stacksProblem.push(30);
             stacksProblem.push(56);
+            stacksProblem.display();
+            stacksProblem.peek();
+            stacksProblem.display();
+            stacksProblem.pop();
+            stacksProblem.display();
+            stacksProblem.IsEmpty();
             stacksProblem.display();
 
         }

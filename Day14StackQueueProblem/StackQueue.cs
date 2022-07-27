@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StackQueueProblem;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace Day14StackQueueProblem
     public class StackQueue
     {
         public Node top;
-        public StackQueue() 
+        public StackQueue()
         {
             this.top = null;
 
@@ -40,6 +41,36 @@ namespace Day14StackQueueProblem
             }
 
         }
+        internal void peek()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack is Empty :");
+                return;
+                Console.WriteLine("{0} top Element of the Stack", this.top.data);
+
+            }
+        }
+        internal void pop()
+        {
+            {
+                if (this.top == null) ;
+                Console.WriteLine("Stack is Empty ,Deletion is not Possible");
+                return;
+
+            }
+            Console.WriteLine("value pop is {0}", this.top.data);
+            this.top = this.top.next;
+        }
+        internal void IsEmpty()
+        {
+            while (this.top != null)
+            {
+                peek();
+                pop();
+            }
+
+        }
+
     }
 }
-
